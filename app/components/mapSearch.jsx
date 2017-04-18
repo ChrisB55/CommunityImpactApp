@@ -40,7 +40,13 @@ var MapSearch = class Map extends React.Component {
     };
     
     return (
+      
       <div>
+       <h3 className="text-center page-title">Search here</h3>
+      <p>
+         
+          <input type="search" placeholder="Use the Map" ref="search"/>
+     </p>
         <button onClick={this.panToProject}>First Local Project</button>
         <div ref="map" style={mapStyle}>A Map of Washington DC</div>
       </div>
